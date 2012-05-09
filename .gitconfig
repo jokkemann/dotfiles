@@ -1,0 +1,41 @@
+[user]
+	email = joakimsv@axis.com
+	name = Joakim Svensson
+[apply]
+	whitespace = nowarn
+[push]
+	default = tracking
+[alias]
+	br = branch
+	b  = branch
+	st = status
+	co = checkout
+	d  = difftool
+[color]
+	ui = auto
+[color "diff"]
+	meta = yellow bold
+	frag = cyan
+	old = red
+	new = green bold
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[instaweb]
+	browser = iceweasel
+	httpd = apache2
+	local = true
+[github]
+	user = jokkemann
+	token = 1bf6e5ab06dfecdae75343fbc3f6042b
