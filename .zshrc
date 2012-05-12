@@ -111,7 +111,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias make=colormake
+
+if [[ -x /usr/bin/colormake ]]; then
+	alias make=colormake
+fi
+
 alias du='du -k'
 alias df='df -k'
 alias files='nautilus --no-desktop --browser . &'
