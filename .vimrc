@@ -42,3 +42,23 @@ autocmd		FileType	php	ia	headii	1Go/*pod=head1 NAME -
 	\require_once();=head1 DESCRIPTION
 	\=head1 METHODS
 	\=over 4pod*/
+
+
+" CUSTOM COMMANDS AND MAPPINGS
+" Avoid holding shift in normal mode
+noremap ; :
+noremap : ;
+
+" Toggle higlight search
+nnoremap <Esc><Esc> :set hlsearch!<CR>
+
+" Toggle highlighting of special chars
+nnoremap <Space> :set list!<CR>
+
+" Shift blocks and keep visual selection
+vnoremap < <gv
+vnoremap > >gv
+
+" Faster scrolling with Ctrl+j/k, cursor at bottom/top
+map <C-j> 3<C-e>L
+map <C-k> 3<C-y>H
