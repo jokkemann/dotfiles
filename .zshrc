@@ -57,7 +57,7 @@ else
   fi
 fi
 #PROMPT='$PR_COLOR$PR_SSH%n@$PR_BACK_RED%m$PR_NO_COLOR:%B%~/%b $(git_prompt_info)>%# '
-PROMPT='$PR_COLOR$PR_SSH%n@%m$PR_NO_COLOR:%B%~/%b $(git_prompt_info)>%# '
+PROMPT='$PR_COLOR$PR_SSH%n@%m$PR_NO_COLOR:%B%~/%b $(git_prompt_info)>%# (%?) '
 #RPROMPT='[%?]'
 }
 set_prompt
