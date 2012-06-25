@@ -4,9 +4,7 @@ if matchend($LC_CTYPE, 'UTF-8') >= 0
 	set encoding=utf-8
 endif
 
-if exists("*pathogen#infect")
-	call pathogen#infect()
-endif
+silent! call pathogen#infect()
 
 filetype plugin on
 filetype indent on
