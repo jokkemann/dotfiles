@@ -121,5 +121,9 @@ alias df='df -k'
 alias files='nautilus --no-desktop --browser . &'
 alias RI='rules binary && deb_inst'
 
+if [[ -x /usr/bin/xmodmap ]]; then
+	xmodmap -e "remove lock = Caps_Lock"
+fi
+
 zstyle -e ':completion:*' special-dirs \
 '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
