@@ -111,6 +111,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias adu='apt-get update && apt-get dist-upgrade'
 
 if [[ -x /usr/bin/colormake ]]; then
 	alias make=colormake
