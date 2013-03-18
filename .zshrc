@@ -79,7 +79,7 @@ win_name() {
 	fi
 }
 win_name
-		
+
 cd() {
 	builtin cd $*
 	win_name
@@ -125,6 +125,8 @@ alias RI='rules binary && deb_inst'
 if [[ -x /usr/bin/xmodmap ]]; then
 	xmodmap -e "remove lock = Caps_Lock"
 fi
+
+. ~/code/z/z.sh
 
 zstyle -e ':completion:*' special-dirs \
 '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
