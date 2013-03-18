@@ -33,11 +33,17 @@ done
 tty=`tty | sed 's#/#_#g;s/_dev_//'`
 LOCALTTYPREFIX=`tty | sed 's#/dev/##g;s#[0-9/].*##'`
 
+parse_git_dirty() {
+	git diff --quiet --ignore-submodules HEAD 2> /dev/null; [ $? -eq 1 ] && echo '*'
+}
+
+parse_git_untracked() {
+	git status -su | sed -e '/^[^\?]/d'
+}
 git_prompt_info() {
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-    if [ "$ref" ]; then
-        echo "(${ref#refs/heads/})"
-    fi
+	git_info=$(git branch --no-color 2> /dev/null | sed -e '/^[^\*] /d' -e "s/\* \(.*\)/\1$(parse_git_dirty)/")
+	[ "$git_info" ] || return
+	echo "($git_info)"
 }
 
 set_prompt() {
