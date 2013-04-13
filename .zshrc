@@ -110,9 +110,8 @@ bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
 bindkey "\e[3~" delete-char
 
-alias l='/bin/ls -F --color=auto'
 alias la='l -a'
-alias ls='ls -CFal --color=auto'
+alias ls='ls -FX --color=auto'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
