@@ -135,3 +135,13 @@ fi
 
 zstyle -e ':completion:*' special-dirs \
 '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
+
+# Run scripts in ~/.zshrc.d
+if [[ -d ~/.zshrc.d ]]; then
+	for i in ~/.zshrc.d/*.sh; do
+		if [[ -r $i ]]; then
+			. $i
+		fi
+	done
+	unset i
+fi
