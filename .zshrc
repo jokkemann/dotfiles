@@ -145,3 +145,7 @@ if [[ -d ~/.zshrc.d ]]; then
 	done
 	unset i
 fi
+
+if [[ -d ~/.rvm/bin ]]; then
+	PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fi
