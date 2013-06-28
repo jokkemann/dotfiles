@@ -9,6 +9,7 @@ silent! call pathogen#infect()
 filetype plugin on
 filetype indent on
 syntax on
+set t_Co=256
 colorscheme koehler
 set nocompatible
 set background=dark
