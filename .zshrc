@@ -139,9 +139,14 @@ if [[ -x /usr/bin/xmodmap ]]; then
 	xmodmap -e "remove lock = Caps_Lock"
 fi
 
-. ~/code/z/z.sh
 . <(npm completion)
 . <(karma completion)
+
+if [[ -e ~/code/z/z.sh ]]; then
+	. ~/code/z/z.sh
+else
+	echo "Don't forget to install z!"
+fi
 
 zstyle -e ':completion:*' special-dirs \
 '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
