@@ -140,6 +140,8 @@ if [[ -x /usr/bin/xmodmap ]]; then
 fi
 
 . ~/code/z/z.sh
+. <(npm completion)
+. <(karma completion)
 
 zstyle -e ':completion:*' special-dirs \
 '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
