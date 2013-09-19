@@ -146,7 +146,7 @@ zstyle -e ':completion:*' special-dirs \
 
 # Run scripts in ~/.zshrc.d
 if [[ -d ~/.zshrc.d ]]; then
-	for i in ~/.zshrc.d/*.sh; do
+	for i in ~/.zshrc.d/*.zsh; do
 		if [[ -r $i ]]; then
 			. $i
 		fi
