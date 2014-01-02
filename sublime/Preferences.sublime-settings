@@ -1,0 +1,42 @@
+{
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/Zacks.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.gz",
+		"*.deb",
+		"*.man"
+	],
+	"folder_exclude_patterns":
+	[
+		"biz/db/",
+		"crm/app/",
+		"crm/db/",
+		"crm/mobile/",
+		"CRM",
+		"axis/crm/",
+		".git/refs"
+	],
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 10,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"GitGutter",
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"soda_folder_icons": true,
+	"tab_size": 4,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"word_wrap": false
+}
