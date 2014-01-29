@@ -16,8 +16,8 @@ set background=dark
 set number
 set mouse=a
 set nowrap
-set tabstop=8
-set shiftwidth=8
+set tabstop=4
+set shiftwidth=4
 set smartindent
 set hlsearch
 
@@ -46,7 +46,7 @@ autocmd		FileType	php	ia	headii	1Go/*pod=head1 NAME -
 " CUSTOM COMMANDS AND MAPPINGS
 " Avoid holding shift in normal mode
 noremap ; :
-noremap : ;
+" noremap : ;
 
 " Toggle higlight search
 nnoremap <Esc><Esc> :set hlsearch!<CR>
