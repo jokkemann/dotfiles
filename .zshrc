@@ -110,7 +110,7 @@ bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
 bindkey "\e[3~" delete-char
 
-alias ls='ls -CFX --color=auto'
+alias ls='ls -CF --color=auto --group-directories-first'
 alias l='ls -l'
 alias ll='ls -al'
 alias la='ls -a'
