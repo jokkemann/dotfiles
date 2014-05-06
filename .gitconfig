@@ -11,6 +11,7 @@
 	st = status
 	co = checkout
 	d  = difftool
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
 	ui = auto
 [color "diff"]
@@ -41,3 +42,5 @@
 	token = 1bf6e5ab06dfecdae75343fbc3f6042b
 [url "git@github.com:"]
 	pushInsteadOf = "git://github.com/"
+[core]
+	editor = /usr/bin/vim
