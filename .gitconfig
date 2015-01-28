@@ -39,7 +39,6 @@
 	local = true
 [github]
 	user = jokkemann
-	token = 1bf6e5ab06dfecdae75343fbc3f6042b
 [url "git@github.com:"]
 	pushInsteadOf = "git://github.com/"
 [core]
