@@ -1,0 +1,8 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+   "window.zoomLevel": 0,
+    "newFile.relativeTo": "project",
+    "newFile.showFullPath": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false
+}

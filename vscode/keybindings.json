@@ -1,0 +1,12 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "alt+`",                 "command": "workbench.action.terminal.focus",
+                                         "when": "editorTextFocus" },
+    { "key": "alt+`",                 "command": "workbench.action.focusFirstEditorGroup",
+                                         "when": "terminalFocus" },
+    { "key": "ctrl+d",                "command": "editor.action.deleteLines",
+                                         "when": "editorTextFocus" },
+    { "key": "ctrl+alt+b",            "command": "workbench.action.tasks.runTask"},
+    { "key": "ctrl+-",                "command": "workbench.action.navigateBack"},
+    { "key": "ctrl+shift+-",          "command": "workbench.action.navigateForward"}
+]
