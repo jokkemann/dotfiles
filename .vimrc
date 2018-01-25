@@ -23,6 +23,7 @@ set tabstop=4
 set shiftwidth=4
 set smartindent
 set hlsearch
+set expandtab
 
 " CUSTOM COMMANDS AND MAPPINGS
 " Avoid holding shift in normal mode
@@ -49,14 +50,14 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 "inoremap <esc> <nop> " Won't work since arrows send the <esc>-char
 inoremap jk <esc>
 
-nnoremap <up> <nop>
-nnoremap <right> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-inoremap <up> <nop>
-inoremap <right> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
+" nnoremap <up> <nop>
+" nnoremap <right> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" inoremap <up> <nop>
+" inoremap <right> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
 
 " ctrlp.vim exclusions
 set wildignore+=*/node_modules/*

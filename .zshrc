@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-  export PATH=$HOME/bin:/usr/local/bin:$PATH
+  export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
@@ -52,7 +52,7 @@ ZSH_THEME="jscode"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm zsh-completions ubuntu debian npm)
+plugins=(git nvm zsh-completions ubuntu debian npm z tmux zsh-syntax-highlighting pip aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,7 +61,7 @@ source $ZSH/oh-my-zsh.sh
 #autoload -U compinit && compinit
 zstyle ':completion:*' special-dirs true
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-	source /etc/profile.d/vte-2.91.sh
+	source /etc/profile.d/vte.sh
 fi
 # export MANPATH="/usr/local/man:$MANPATH"
 
